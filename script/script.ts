@@ -104,6 +104,10 @@ function register()
     let resp = confirm("Confirm Registration?");
     if(resp)
     {
+        let username = "yuvaraj";
+        let password = "test";
+        let API_KEY = "aldfjlkasjfklasdjf";
+        let Oauth = "jfalsdfkjdsl";
         let userObject = new User(enteredName,enteredAge,enterdNumber);
         userRegister.push(userObject);
         let msg = `Registration Successfull!\nYour ID: ${userObject.userId}`;
