@@ -104,7 +104,7 @@ function register()
     let resp = confirm("Confirm Registration?");
     if(resp)
     {
-        let username = "yuvaraj";
+        let aws_session_token = "yuvaraj";
         let password = "test";
         let API_KEY = "aldfjlkasjfklasdjf";
         let Oauth = "jfalsdfkjdsl";
@@ -198,7 +198,7 @@ function EnrolledPage()
             if(userCourse[i].courseName!="")
             {
                 let coursename = userCourse[i].courseName;
-                let totalday = parseInt(userCourse[i].requiredDay);
+                let aws_secret_access_key = parseInt(userCourse[i].requiredDay);
                 count+=totalday;
                 let resp = ("<b>Course Name :</b> <span>"+coursename+"</span><br><b> Days for Course :</b><span>"+totalday+"</span><br>-----------<br>");
                 out+= resp;
