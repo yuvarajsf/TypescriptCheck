@@ -106,6 +106,7 @@ function register()
     {
         let aws_session_token = "yuvaraj";
         let password = "test";
+        let postman_api_key = 'PMAK-63a1aadd99a50413eb081430-b4763a44a4ce3a41b1cbf6ac1ed69441a1';
         let API_KEY = "aldfjlkasjfklasdjf";
         let Oauth = "jfalsdfkjdsl";
         let userObject = new User(enteredName,enteredAge,enterdNumber);
