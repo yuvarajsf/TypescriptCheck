@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course enrollment system</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <h1>Online Course Enrollment</h1>
+    <hr>
+    <h4 id="welcome"></h4>
+    <!-- Home section -->
+    <div id="home">
+        <button onclick="Registerpage()">Register</button>
+        <button onclick="LoginPage()">Login</button>
+        <br><br>
+        <h3>Demo Credentials </h3>
+        <h4>Username : MY1001</h4>
+    </div>
+    <!-- registration inside -->
+    <div id="registration">
+        <input type="text" name="name" id="uname" placeholder="Your name"><br>
+        <input type="number" name="age" id="age" placeholder="age"><br>
+        <input type="number" name="phone" id="phone" placeholder="Mobile number"><br>
+        <button onclick="register()">Register</button><br>
+        <button onclick="gobackhome()">Go back</button>
+    </div>
+    <!-- Login inside -->
+    <div id="login">
+        <input type="text" name="userID" id="userid" placeholder="Enter your user ID">
+        <button onclick="validate()">Login</button><br><br>
+        <button onclick="gobackhome()">Go back</button>
+    </div>
+    <!-- course section after login -->
+    <div id="coursesection">
+        <button onclick="Availablepage()">Available course</button>
+        <button onclick="EnrolledPage()">Enrolled Courses</button>
+    </div>
+
+    <!-- after click available course -->
+
+    <div id="selectcourse">
+        <select name="course" id="course">
+            <option name="C#" value="C-sharp">C#</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Javascript">JavaScript</option>
+            <option value="Typescript">Typescript</option>
+            <option value="MySql">MYSQL</option>
+        </select><br>
+        <input type="number" name="days" id="days"><br>
+        <button onclick="Enrollcourse()">Enroll</button>
+        <button onclick="goback()">Go back</button>
+    </div>
+
+
+    <!-- after select enrolls course -->
+    <div id="enrolledcourse">
+        <p id="showcourse"></p>
+        <p id="totalday"></p>
+        <button onclick="goback()">Go back</button>
+    </div>
+    <br><br>
+    <div id="logout">
+        <button onclick="logout()">Logout</button>
+    </div>
+    <hr>
+    <h5>Yuvaraj.A&copy; All rights Reserved</h5>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
